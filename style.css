@@ -31,7 +31,6 @@ main {
 }
 
 .heading {
-    
     background-color: rgba(29, 29, 29, 0.478) ;
     width:100%;
     text-align: center;
@@ -42,7 +41,8 @@ main {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: calc(1.5rem + 2vw);
+    text-shadow: 2px 2px #5f4f4c83;
 }
 
 .sidebar > p {
@@ -61,6 +61,74 @@ h1 {
 .wrapper {
     display:flex;
     flex-direction: column;
+    /* justify-content: center; */
     width:60%;
+    height:100vh;
     background-color: rgb(227, 227, 227);
+}
+
+.description {
+    padding: calc(15% + 2vh) 20% 40px 5%;
+    font-size: calc(0.2rem + 1vw);
+}
+
+.userInfo {
+    background-color: rgb(240, 240, 240);
+    padding: 2vh 20% 2vh 5%;
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.307);
+}
+
+.userInput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+fieldset {
+    border:none;
+}
+
+legend {
+    font-weight: bold;
+    font-family: "Alef", Arial, Helvetica, sans-serif;
+    font-size: calc(0.4rem + 1vw);
+}
+
+label {
+    display:flex;
+    flex-direction: column;
+    font-size: calc(0.2rem + 0.5vw);
+    font-weight: bold;
+    margin:10px 0;
+    letter-spacing: 0.3ch;
+    width:40%;
+}
+
+input {
+    font-size: calc(0.2rem + 1vw);
+    padding:5px;
+    border-radius: 5px;
+    border:1px solid rgb(207, 207, 207);
+    margin-top: 3px;
+    /* width:60%; */
+}
+
+.submitInfo {
+    padding: 3vh 20% 2vh 5%;
+}
+
+button {
+    background-color:#c2a19a ;
+    padding:10px 30px;
+    font-size: calc(0.2rem + 1vw);
+    font-weight: bold;
+    color:rgb(238, 238, 238);
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    box-shadow: 3px 3px #5f4f4c83;
+}
+
+.submitInfo > p{
+    font-size: calc(0.1rem + 1vw);
 }
