@@ -139,7 +139,8 @@ button {
 }
 
 .submitInfo a {
-    color:#a28781
+    color:#a28781;
+    text-decoration: none;
 }
 
 /* FORM ACTIONS */

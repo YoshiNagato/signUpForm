@@ -75,15 +75,15 @@
                                         autocomplete="mobile"
                                     >
                                 </label>
-                                <label for="password">
+                                <label for="password" class="passHover">
                                     PASSWORD *
-                                    <input 
-                                        type="password"
-                                        id="password"
-                                        name="password"
-                                        pattern="[A-Za-z]{8,20}"
-                                        required
-                                    >
+                                        <input
+                                            type="password"
+                                            id="password"
+                                            name="password"
+                                            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,20}$"
+                                            required
+                                        >
                                 </label>
                                 <label for="passwordConfirm">
                                     CONFIRM PASSWORD *
@@ -91,7 +91,7 @@
                                         type="password"
                                         id="passwordConfirm"
                                         name="passwordConfirm"
-                                        pattern="[A-Za-z]{8,20}"
+                                        pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,20}$"
                                         required
                                     >
                                 </label>
@@ -109,4 +109,5 @@
         </div>
     </main>
 </body>
+
 </html>
