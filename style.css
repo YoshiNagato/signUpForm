@@ -1,5 +1,15 @@
+@import url(https://fonts.bunny.net/css?family=alef:400);
+
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+
+
+
+.sidebar {
+    background-image: url("sparrow.jpg");
+    background-repeat: no-repeat;
+}
+

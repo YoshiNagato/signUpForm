@@ -4,11 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=alef:400" rel="stylesheet" />
     <title>Birdwatching</title>
 </head>
 <body>
     <main>
-        
+        <div class="sidebar">
+            <div class="heading">
+                <h1>The Sparrow</h1>
+                <h2>Birdwatching</h2>
+            </div>
+            <p>Photo by <a href="https://pixabay.com/users/ahmetyuksek-45995253/">Ahmet Yüksek</a></p>
+        </div>
+        <div class="wrapper">
+            <div class="description">
+                <p>Are you interested in birds and nature? Let's join together on our free birdwatching tours! Just create an account and look for a meetup near you.</p>
+                <br>
+                <p>Let's enjoy nature <strong>together</strong>🦉</p>
+            </div>
+            <div class="form">
+                <form action="" method="post">
+                    <div class="userInfo">
+                        <fieldset>
+                        <legend>Let's watch together!</legend>
+                            <div class="userInput">
+                                <label for="firstName">
+                                    FIRST NAME
+                                    <input 
+                                        type="text"
+                                        id="firstName"
+                                    >
+                                </label>
+                                <label for="lastName">
+                                    LAST NAME
+                                    <input 
+                                        type="text"
+                                        id="lastName"
+                                    >
+                                </label>
+                                <label for="email">
+                                    EMAIL
+                                    <input 
+                                        type="email"
+                                        id="email"
+                                    >
+                                </label>
+                                <label for="phoneNumber">
+                                    PHONE NUMBER
+                                    <input 
+                                        type="tel"
+                                        id="phoneNumber"
+                                    >
+                                </label>
+                                <label for="password">
+                                    PASSWORD
+                                    <input 
+                                        type="password"
+                                        id="password"
+                                    >
+                                </label>
+                                <label for="passwordConfirm">
+                                    CONFIRM PASSWORD
+                                    <input 
+                                        type="password"
+                                        id="passwordConfirm"
+                                    >
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="submitInfo">
+                        <button type="submit">
+                            <p>Create Account</p>
+                        </button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
 </html>
