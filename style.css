@@ -78,6 +78,10 @@ h1 {
     box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.307);
 }
 
+.userInfo p {
+    font-size: 0.8rem;
+}
+
 .userInput {
     display: flex;
     flex-wrap: wrap;
@@ -127,8 +131,31 @@ button {
     border-radius: 10px;
     margin-bottom: 3vh;
     box-shadow: 3px 3px #5f4f4c83;
+    transition: 0.2s;
 }
 
 .submitInfo > p{
     font-size: calc(0.1rem + 1vw);
+}
+
+.submitInfo a {
+    color:#a28781
+}
+
+/* FORM ACTIONS */
+input:active {
+    border:1px solid blue;
+}
+
+input:invalid {
+    border:1px solid red;
+}
+
+button:hover {
+    background-color: #a28781;
+    transform:scale(1.05)
+}
+
+button:active {
+    transform: translateY(4px)
 }

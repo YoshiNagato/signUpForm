@@ -28,26 +28,41 @@
                     <div class="userInfo">
                         <fieldset>
                         <legend>Let's watch together!</legend>
+                        <p>* are required fields</p>
                             <div class="userInput">
                                 <label for="firstName">
-                                    FIRST NAME
+                                    FIRST NAME *
                                     <input 
                                         type="text"
                                         id="firstName"
+                                        name="fname"
+                                        pattern="[A-ZÜÖÄa-züöä-]{2,}"
+                                        placeholder="Jack"
+                                        autocomplete="name"
+                                        required
                                     >
                                 </label>
                                 <label for="lastName">
-                                    LAST NAME
+                                    LAST NAME *
                                     <input 
                                         type="text"
                                         id="lastName"
+                                        name="lname"
+                                        pattern="[A-ZÜÖÄa-züöä-]{2,}"
+                                        placeholder="Sparrow"
+                                        autocomplete="family-name"
+                                        required
                                     >
                                 </label>
                                 <label for="email">
-                                    EMAIL
+                                    EMAIL *
                                     <input 
                                         type="email"
                                         id="email"
+                                        name="email"
+                                        placeholder="jack@sparrow.com"
+                                        autocomplete="email"
+                                        required
                                     >
                                 </label>
                                 <label for="phoneNumber">
@@ -55,20 +70,29 @@
                                     <input 
                                         type="tel"
                                         id="phoneNumber"
+                                        name="phoneNumber"
+                                        placeholder="+XX XXXX XXXX"
+                                        autocomplete="mobile"
                                     >
                                 </label>
                                 <label for="password">
-                                    PASSWORD
+                                    PASSWORD *
                                     <input 
                                         type="password"
                                         id="password"
+                                        name="password"
+                                        pattern="[A-Za-z]{8,20}"
+                                        required
                                     >
                                 </label>
                                 <label for="passwordConfirm">
-                                    CONFIRM PASSWORD
+                                    CONFIRM PASSWORD *
                                     <input 
                                         type="password"
                                         id="passwordConfirm"
+                                        name="passwordConfirm"
+                                        pattern="[A-Za-z]{8,20}"
+                                        required
                                     >
                                 </label>
                             </div>
