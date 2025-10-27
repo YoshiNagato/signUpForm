@@ -6,10 +6,61 @@
     box-sizing: border-box;
 }
 
-
-
-.sidebar {
-    background-image: url("sparrow.jpg");
-    background-repeat: no-repeat;
+body {
+    background-color: rgb(29, 29, 29);
 }
 
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    width:70%;
+    margin:auto;
+}
+
+/* LEFT SIDE */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width:40%;
+    background-image: url("sparrow.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+}
+
+.heading {
+    
+    background-color: rgba(29, 29, 29, 0.478) ;
+    width:100%;
+    text-align: center;
+    font-family: "Alef",Arial, Helvetica, sans-serif;
+    color:rgb(238, 238, 238);
+    padding:30px 0;
+    margin-top:40%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.sidebar > p {
+    position:fixed;
+    bottom:10px;
+    color:rgb(238, 238, 238);
+    font-size: 0.8rem;
+}
+
+.sidebar a {
+    color:rgb(238, 238, 238)
+}
+
+
+/* RIGTH SIDE */
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    width:60%;
+    background-color: rgb(227, 227, 227);
+}
